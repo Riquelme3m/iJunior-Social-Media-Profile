@@ -56,7 +56,7 @@ main{
 }
 .name-title{
     margin-top:30px;
-    font-size:1.8rem;
+    font-size:1.65rem;
     color:var(--White);
     font-weight: 700;
     letter-spacing: 0.04rem;
@@ -80,20 +80,27 @@ main{
     align-items: center;
     margin-top:30px;
     width:90%;
-    
     height:53%;
     justify-content: space-around;
+    margin-bottom:20px;
 }
 button{
     width:90%;
-    height:13%;
-    border-radius:10px;
-    background-color: var(--Grey-900);
+    height:16%;
+    background-color: var(--Grey-700);
     color:var(--White);
-    font-weight: 600;
-    
+    font-weight: 700;
+    box-shadow: 0;
+    border-radius: 1.0rem;
+    letter-spacing: 0.05rem;
+    border:none;
 }
-
+button:hover{
+    background-color: var(--Green);
+    color:black;
+}
 @media screen and (min-width:768px){
-    /*From tablet up to big desktops*/
+    main{
+        width:500px;
+    }
 }

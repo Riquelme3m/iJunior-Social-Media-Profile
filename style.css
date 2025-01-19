@@ -17,90 +17,92 @@
     font-family: "Inter";
     src: url(/assets/fonts/Inter_18pt-Regular.ttf);
 }
+
 body{
-    font-size:14px;
-    font-family: "Inter","Arial","sans-serif";
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height:100vh;
-    display:flex;
+    background-color: var(--Grey-900);
+}
+.main{
+    padding:2.0rem;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(blue);
-
-}
-main{
+    gap:0.8rem;
     background-color: var(--Grey-800);
-    max-width:500px;
-    width:90%;
-    height:70%;
-    border-radius:20px;
+    border-radius: 1rem;
+    width:310px;
+    
+    
+}
+.info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    font-size:0.8rem;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height:100%;
-}
-.container-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top:30px;
-}
-.container-info img{
-    width:43%;
-    height:43%;
+.info img{
     border-radius: 50%;
-
+    max-width:40%;
 }
-.name-title{
-    margin-top:30px;
-    font-size:1.65rem;
+.info h1{
     color:var(--White);
-    font-weight: 700;
-    letter-spacing: 0.04rem;
-
+    font-weight: 900;
 }
-.container-info p:nth-child(3){
-    
-    margin-top:15px;
-    font-size:1.1rem;
+.info {
     color:var(--Green);
+    font-weight: 700;
 }
-.container-info :nth-child(4){
-    
-    margin-top:20px;
-    font-size:0.9rem;
+ 
+.info .description p{
     color:var(--White);
+    font-weight: 500;
 }
-.container-btns{
+.buttons{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top:30px;
-    width:90%;
-    height:53%;
-    justify-content: space-around;
-    margin-bottom:20px;
+    justify-content: center;
+    gap:1rem;
+    width:18rem;
+    
 }
-button{
-    width:90%;
-    height:16%;
+.buttons button{
+    height:2.5rem;
+    border-radius: 0.5rem;
+    border:none;
+    outline:none;
     background-color: var(--Grey-700);
     color:var(--White);
     font-weight: 700;
-    box-shadow: 0;
-    border-radius: 1.0rem;
-    letter-spacing: 0.05rem;
-    border:none;
 }
-button:hover{
+.buttons button:hover{
     background-color: var(--Green);
-    color:black;
+    color:var(--Grey-900);
 }
+
 @media screen and (min-width:768px){
-    main{
-        width:500px;
+    .main{
+        width:30rem;
+        gap:2.5rem;
+        
+    }
+    .info{
+        font-size: 1.0rem;
+    }
+    .buttons button{
+        height:3rem;
     }
 }
+
+
+
+
+
+
+
